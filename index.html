@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa Bienestar</title>
+    <meta name="description"
+        content="Sumérgete en el lujo del bienestar en nuestro spa: tratamientos terapéuticos, relajación total y renovación personal. ¡Descubre tu ser interior hoy!">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#000">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Quicksand&display=swap" rel="stylesheet">
+
+
+    <!-- ENLAZAR HOJA DE ESTILO CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="inicio">
+        <img src="images/logo.png" alt="logo spa bienestar">
+    </header>
+    <nav>
+        <a href="#inicio">INICIO</a>
+        <a href="#quienes">QUIÉNES SOMOS</a>
+        <a href="#tratamientos">TRATAMIENTOS</a>
+        <a href="#tarifas">TARIFAS</a>
+        <a href="#localizacion">LOCALIZACIÓN</a>
+    </nav>
+    <section class="quienes" id="quienes">
+        <h2>QUIÉNES SOMOS</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aspernatur, consequatur aperiam, et ipsam nobis
+            nihil iusto facilis id hic vero corrupti dolore pariatur. Quae dolor veniam nobis facilis in!</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio culpa provident tempore sapiente nam maiores
+            eligendi quis obcaecati at quasi accusantium, unde omnis magnam. Dolore tempora odit minus dignissimos
+            eius.Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla quaerat quidem nisi rerum, ad
+            facere aut maiores sequi at velit molestiae, quam, ducimus tenetur ipsam. Illum quae adipisci odio? Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Dolores, veritatis sunt?</p>
+    </section>
+    <section class="tratamientos" id="tratamientos">
+        <h2>TRATAMIENTOS</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aspernatur, consequatur aperiam, et ipsam nobis
+            nihil iusto facilis id hic vero corrupti dolore pariatur. Quae dolor veniam nobis facilis in!</p>
+
+        <div class="iconos">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/iconos-ok/iconos-ok/ico-facial.png" alt="ícono faciales" class="facial">
+                <p>Faciales</p>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/iconos-ok/iconos-ok/ico-corporal.png" alt="ícono toalla"
+                    class="corporal">
+                <p>Corporales</p>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/iconos-ok/iconos-ok/ico-spa.png" alt="ícono spa" class="spa">
+                <p>Spa</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="tarifas" id="tarifas">
+        <h2>TARIFAS</h2>
+
+        <p>Si quieres saber las tarifas de nuestros tratamientos no dudes en ponerte en contacto con nosotros.</p>
+
+        <p>Resolveremos cualquier duda que tengas.</p>
+        <a href="https://www.facebook.com/" target="_blank">Contáctanos</a>
+    </section>
+
+    <section class="localizacion" id="localizacion">
+        <h2>LOCALIZACIÓN</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque necessitatibus excepturi quis quam
+            repellendus doloremque ipsam eum natus eaque, iusto aperiam magnam animi incidunt.
+        </p>
+
+        <a href="https://www.google.com.mx/maps/place/La+Morena+427,+c%C3%B3digo+2,+Col+del+Valle+Nte,+Benito+Ju%C3%A1rez,+03103+Ciudad+de+M%C3%A9xico,+CDMX/@19.3986732,-99.1619324,20.17z/data=!4m6!3m5!1s0x85d1ff118e44f9ed:0x350d94812640f9b2!8m2!3d19.3986327!4d-99.1616368!16s%2Fg%2F11bw51t7xg?hl=es&entry=ttu"
+            target="_blank">
+            <img src="images/dummy-mapa-v2.jpg" alt="google maps">
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2023 SPA BIENESTAR</p>
+        <p>All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+
+</html>
